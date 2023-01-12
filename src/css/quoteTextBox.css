@@ -1,10 +1,10 @@
 .quoteTextBox {
-    border: 1px solid green;
+    /*border: 1px solid green; */
     margin: 10px;
   }
   
   .quoteTextBox p {
     background-color: inherit;
     color: white;
-    font-size: 32px;
+    font-size: 34px;
   }
