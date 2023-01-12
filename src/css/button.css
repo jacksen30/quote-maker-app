@@ -6,6 +6,9 @@ button {
     margin-top: 20px;
     border-radius: 15px;
     background-color: green;
+    color: black;
+    border-color: black;
+    
   }
 
   .button-long {

@@ -5,12 +5,14 @@ import TitleBanner from './TitleBanner';
 import QuoteTypeSelector from './QuoteTypeSelector';
 
 function App() {
-  const [backgroundColor, setBackgroundColor] = useState('purple');
+  const [backgroundColor, setBackgroundColor] = useState('Purple');
   
   const initialQuote = "All Our Dreams Can Come True If We Have The Courage To Pursue Them"
   const [quote, setQuote] = useState(initialQuote);
 
   const [font, setFont] = useState();
+
+  const fontList = ['Dancing Script', 'Oswald', 'Rowdies']
 
   const Motivational = ['All Our Dreams Can Come True If We Have The Courage To Pursue Them.', 'It does not matter how slowly you go as long as you do not stop.', 'Start where you are. Use what you have. Do what you can.', 'Life is 10% what happens to you and 90% how you react to it.', 'The secret of getting ahead is getting started.', 'Never give up, for that is just the place and time that the tide will turn.', 'You are never too old to set another goal or to dream a new dream.'];
   const Funny = ['Fun1', 'Fun2', 'Fun3', 'Fun4'];
@@ -29,11 +31,13 @@ function App() {
   }
 
   function handleFontChange() {
-    const fontList = ['Dancing Script', 'Oswald', 'Rowdies']
     const randomIndex =  Math.floor(Math.random() * fontList.length);
     let newFont = (fontList[randomIndex]);
-    if(newFont === font) {handleFontChange()}
-    setFont(newFont)
+    if (newFont === font) {
+      setFont('sans-serif')
+    } else {
+      setFont(newFont)
+    }
   }
   
   
@@ -41,7 +45,10 @@ function App() {
     const colorList = ['pink', 'orange', 'orange', 'purple', 'aqua', 'chartreuse', 'cyan', 'deeppink', 'gold', 'lightslategray', 'tomato', 'thistle']
     const randomIndex =  Math.floor(Math.random() * colorList.length);
     let BGcolor = (colorList[randomIndex]);
-    setBackgroundColor(BGcolor)
+      if (BGcolor === backgroundColor) {
+      setBackgroundColor('DeepSkyBlue')
+    }   else { setBackgroundColor(BGcolor) 
+    }
   }
 
   function handleQuoteChange() {
