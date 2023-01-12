@@ -1,0 +1,14 @@
+.quoteTypeSelector-Label {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.quoteTypeSelector-DropDown {
+    margin: 10px;
+    border: 1px solid black;
+    font-size: 1.5rem;
+}
+
+.quoteTypeSelector-Option {
+    font-size: 1rem;
+}

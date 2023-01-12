@@ -1,0 +1,13 @@
+button {
+    font-weight: bold;
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: green;
+  }
+
+  .button-long {
+    width: 300px;
+  }

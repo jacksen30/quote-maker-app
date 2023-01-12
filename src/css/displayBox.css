@@ -1,0 +1,16 @@
+.displayBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    min-height: 270px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: red;
+  }
+
+  .btb {
+    position: relative;
+    top: 190px;
+    border: 1px solid orange;
+  }
