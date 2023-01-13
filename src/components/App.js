@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     handleQuoteChange()
     console.log('Testing effect on Quote Type Change')
-  }, [quoteList])
+  }, [quoteList, handleQuoteChange])
 
 
   function handleQuoteTypeSelection(v) {
