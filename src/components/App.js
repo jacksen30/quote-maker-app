@@ -19,10 +19,6 @@ function App() {
 
   const [quoteList, setQuoteList] = useState ([...Motivational])
 
-  useEffect(() => {
-    handleQuoteChange()
-    console.log('Testing effect on Quote Type Change')
-  }, [quoteList])
 
   function handleQuoteTypeSelection(v) {
     if (v === 'Love') {
