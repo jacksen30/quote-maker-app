@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DisplayBox from './DisplayBox'
 import EditButtonBox from './EditButtonBox';
 import TitleBanner from './TitleBanner';
@@ -18,6 +18,11 @@ function App() {
   const Love = ['I love you because the entire universe conspired to help me find you.', 'I love you more than there are stars in the sky and fish in the sea.', 'Till my last day, I’ll be loving you.', 'If you remember me, then I don’t care if everyone else forgets.', 'Love is an irresistible desire to be irresistibly desired.', 'Never go to bed mad. Stay up and fight.', 'To love and be loved is to feel the sun from both sides.', 'All you need is love. But a little chocolate now and then doesn\'t hurt.', 'A simple I love you means more than money.', 'Life with you makes perfect sense, You\'re my best friend.', 'Two things you will never have to chase: true friends and true love.', 'True love is selfless. It is prepared to sacrifice.'];
 
   const [quoteList, setQuoteList] = useState ([...Motivational])
+
+  useEffect(() => {
+    handleQuoteChange()
+    console.log('Testing effect on Quote Type Change')
+  }, [quoteList])
 
 
   function handleQuoteTypeSelection(v) {
