@@ -20,8 +20,9 @@ function App() {
   const [quoteList, setQuoteList] = useState ([...Motivational])
 
   useEffect(() => {
-  
-  }, [quoteList])
+    handleQuoteChange()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [quoteList]) 
 
 
   function handleQuoteTypeSelection(v) {
