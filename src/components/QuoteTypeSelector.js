@@ -9,7 +9,7 @@ export default function QuoteTypeSelector(props) {
         <select className='quoteTypeSelector-DropDown' name='typeSelector' id='typeSelector' onChange={(e) => handleQuoteTypeSelection(e.target.value)} /*</div>onChange={(e) => handleQuoteTypeChange(e.target.value)}*/>
                 <option className='quoteTypeSelector-Option' value="Motivational">Motivational</option>
                 <option className='quoteTypeSelector-Option' value="Funny">Funny</option>
-                <option className='quoteTypeSelector-Option' value="Business">Business</option>
+                <option className='quoteTypeSelector-Option' value="Love">Love</option>
         </select>  
     </div>
   )

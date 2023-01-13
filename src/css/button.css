@@ -14,3 +14,24 @@ button {
   .button-long {
     width: 300px;
   }
+
+  .radio-btn-label{
+    margin-right: 8px;
+  }
+
+  .radio-btn-input {
+    margin-right: 4px;
+  }
+
+  .customTextInput-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-row-gap: 12px;
+    margin-top: 12px;
+    margin-right: 6px;
+    font-weight: 600;
+  }
+
+  .customInput-Label {
+    font-weight: 600;
+  }

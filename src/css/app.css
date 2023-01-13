@@ -5,7 +5,8 @@
 @import './titleBanner.css';
 @import './quoteTypeSelector.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald&family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Courgette&family=Covered+By+Your+Grace&family=Dancing+Script&family=Indie+Flower&family=Kalam:wght@300;400&family=Noto+Serif&family=Oswald:wght@300;400&family=Permanent+Marker&family=Rowdies:wght@300;400&family=Shadows+Into+Light&family=Sofia+Sans:wght@300;400&display=swap');
+
 
 *, *::before, *::after {
     font-family: sans-serif;
@@ -21,4 +22,9 @@ body {
 	background-color: yellow;
 	font-family: Helvetica, Arial, sans-serif;
     text-align: center;
+}
+
+.testing-title-text{
+	margin-bottom: 0px;
+	text-decoration: underline;
 }

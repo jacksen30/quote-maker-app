@@ -10,3 +10,5 @@ function App() {
         let BGcolor = (colorList[randomIndex]);
         setBackgroundColor(BGcolor)
 
+        */
+

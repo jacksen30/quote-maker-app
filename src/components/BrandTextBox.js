@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function BrandTextBox() {
+export default function BrandTextBox(props) {
   return (
     <>
-      <div className='brandTextBox'>www.nillsonquotebox.com</div>
+      <div className='brandTextBox'>{props.instagram}</div>
     </>
   )
 }
