@@ -1,11 +1,16 @@
+.titleBanner-wrapper{
+    background-color: black;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+}
 .titleWrapper {
     display: flex;
     width: 100vw;
-    border: 5px solid purple;
-    border-radius: 7px;
+    /* border: 5px solid purple; 
+    border-radius: 7px; */
     align-items: space-between;
-    background-color:black;
     padding: 0px;
+    margin: 0px;
 }
 
 .qmkrLogo{
@@ -14,9 +19,16 @@
     padding-bottom: 0px;
     color: white;
     font-family: 'Permanent Marker';
+    width: 100%;
 }
 
+.nav-bottom{
+    background-color:black;
+    color: white;
+    margin: 0px;
+}
 .intro-text {
     width: 80vw;
     margin: auto;
+    font-family: 'Kalam';
 }
