@@ -3,7 +3,7 @@ import DisplayBox from './DisplayBox'
 import EditButtonBox from './EditButtonBox';
 import TitleBanner from './TitleBanner';
 import QuoteTypeSelector from './QuoteTypeSelector';
-import { FaFacebookSquare, FaInstagram, FaTwitter} from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('deeppink');
@@ -96,7 +96,11 @@ function App() {
       
       <br/><br/><br/>
       <p><h3 className="testing-title-text">TESTING NOTES</h3><br/>
-      Save Function - Not Yet Implemented<br/>
+      Lots more Quotes and Catogories will be added<br/> once functionlity has been tested<br/><br/>
+      To Reset After Entering Custom Quote Text,<br/> Press Green Quote Button<br/><br/>
+      Sign up button functionality not implemented<br/>
+      (Currently sign up not required)<br/><br/>
+      Save Function - Not Yet Implemented <br/>(Use screenshot for now)<br/><br/>
       Sanitation Of Text Inputs - Not Yet Implemented<br/><br/>
 
       Responsive Sizing - Currently only sized for <br/>Iphone 12 pro so layout will potentially break<br/> or not look quite right on other screen sizes<br/> currently.<br/>
@@ -105,8 +109,7 @@ function App() {
       <br/><br/>
       Background / SiteHeader / Buttons / SiteText &<br/>
       styling will be updated once the quote builder is fully functional :)<br/><br/>
-      To Reset After Entering Custom Quote Text,<br/> Press Green Quote Button<br/><br/>
-      Lots more Quotes and Catogories will be added<br/> once functionlity has been tested</p>
+      </p>
 
       <br/><br/>
       --------------------------------------------------------<br/>
@@ -126,3 +129,4 @@ function App() {
 
 
 export default App;
+

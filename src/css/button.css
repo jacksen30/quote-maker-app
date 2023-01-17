@@ -21,10 +21,6 @@ button {
     color: black;
   }
 
-  #signUp-Button:hover{
-    background-color:red;
-  }
-
   .button-long {
     width: 300px;
   }
