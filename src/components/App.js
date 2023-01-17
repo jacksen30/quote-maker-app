@@ -3,6 +3,7 @@ import DisplayBox from './DisplayBox'
 import EditButtonBox from './EditButtonBox';
 import TitleBanner from './TitleBanner';
 import QuoteTypeSelector from './QuoteTypeSelector';
+import { FaFacebookSquare, FaInstagram, FaTwitter} from "react-icons/fa";
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('deeppink');
@@ -12,6 +13,8 @@ function App() {
   const [quote, setQuote] = useState(initialQuote);
 
   const [font, setFont] = useState('Permanent Marker');
+
+  const [icon, setIcon] = useState();
 
   const Motivational = ['It does not matter how slowly you go as long as you do not stop.', 'Start where you are. Use what you have. Do what you can.', 'Life is 10% what happens to you and 90% how you react to it.', 'The secret of getting ahead is getting started.', 'Never give up, for that is just the place and time that the tide will turn.', 'You are never too old to set another goal or to dream a new dream.', 'Remember, today is the tomorrow you worried about yesterday.', 'You miss 100% of the shots you don’t take.', 'The only way to avoid criticism: do nothing, say nothing, and be nothing.'];
   const Funny = ['I love you more than coffee but not always before coffee.', 'I like long romantic walks down every aisle at Kmart.', 'You are only young once, but you can be immature for a lifetime.', 'People say nothing is impossible, but I do nothing every day.', 'If you have friends who are as weird as you, then you have everything.', 'A pessimist is a person who has had to listen to too many optimists.', 'An alcoholic is someone you don’t like who drinks as much as you do.', 'I’ve got all the money I’ll ever need, if I die by four o’clock.', 'If you want your children to listen, try talking softly to someone else.', 'I always arrive late at the office, but I make up for it by leaving early.', 'The worst time to have a heart attack is during a game of charades.', 'Sports are the reason I am out of shape. I watch them all on TV.'];
@@ -71,18 +74,29 @@ function App() {
     setQuote(e)
   }
   
+  function handleIconChange(i) {
+    if (i === 'instagram-icon') {
+      setIcon(<FaInstagram  size='1.15rem' />)
+    } else if (i === 'facebook-icon') {
+      setIcon(<FaFacebookSquare size='1.15rem'  />)
+    } else if (i === 'twitter-icon') {
+      setIcon(<FaTwitter size='1.15rem' />)
+    }else {
+      setIcon()
+    }
+  }
+
 
   return (
     <div className='app'>
       <TitleBanner />
       <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} />
-      <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} instagram={instagram} />
-      <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} />
+      <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} instagram={instagram} icon={icon}/>
+      <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} icon={icon} />
       
       <br/><br/><br/>
       <p><h3 className="testing-title-text">TESTING NOTES</h3><br/>
       Save Function - Not Yet Implemented<br/>
-      Add Social Icon - Not Yet Implemented<br/>
       Sanitation Of Text Inputs - Not Yet Implemented<br/><br/>
 
       Responsive Sizing - Currently only sized for <br/>Iphone 12 pro so layout will potentially break<br/> or not look quite right on other screen sizes<br/> currently.<br/>
@@ -99,11 +113,12 @@ function App() {
       IGNORE TEXT BELOW - DEBUGGING ONLY<br/>
       --------------------------------------------------------<br/>
 
-
+      console.log(icon = {icon}) <br/>
       console.log(background color = {backgroundColor}) <br />
       console.log(quote = {quote})
       console.log(font = {font})
       console.log(quote list = {quoteList})
+      
       
     </div>
   );

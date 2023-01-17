@@ -8,7 +8,18 @@ button {
     background-color: green;
     color: black;
     border-color: black;
-    
+    }
+
+  #signUp-Button {
+    position: relative;
+    bottom: 6px;
+    margin: 0px;
+    margin-left: 85px;
+    background-color: blue;
+  }
+
+  #signUp-Button:hover{
+    background-color:red;
   }
 
   .button-long {
@@ -29,7 +40,6 @@ button {
     grid-row-gap: 12px;
     margin-top: 12px;
     margin-right: 6px;
-    font-weight: 600;
   }
 
   .customInput-Label {

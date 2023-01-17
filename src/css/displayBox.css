@@ -1,7 +1,7 @@
 .displayBox {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:space-between;
     width: 95%;
     min-height: 270px;
     margin: auto;
@@ -13,4 +13,10 @@
     position: relative;
     top: 190px;
     border: 1px solid orange;
+  }
+
+  .brandingplusicon {
+    position: relative;
+    margin-right: 4.5px;
+    bottom: -4px;
   }
