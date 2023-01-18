@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import DisplayBox from './DisplayBox'
 import EditButtonBox from './EditButtonBox';
 import TitleBanner from './TitleBanner';
 import QuoteTypeSelector from './QuoteTypeSelector';
 import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
 
+export const IconContext = React.createContext()
+
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('deeppink');
-  const [instagram, setInstagram] = useState();
+  const [customBrandText, setCustomBrandText] = useState();
   
   const initialQuote = "All Our Dreams Can Come True If We Have The Courage To Pursue Them"
   const [quote, setQuote] = useState(initialQuote);
@@ -67,7 +69,7 @@ function App() {
   }
 
   function handleCustomBrandTextChange(e) {
-    setInstagram(e)
+    setCustomBrandText(e)
   }
 
   function handleCustomQuoteTextChange(e) {
@@ -88,11 +90,11 @@ function App() {
 
 
   return (
-    <div className='app'>
+    <IconContext.Provider value={icon}>
       <TitleBanner />
       <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} />
-      <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} instagram={instagram} icon={icon}/>
-      <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} icon={icon} />
+      <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} customBrandText={customBrandText} />
+      <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
       
       <br/><br/><br/>
       <p><h3 className="testing-title-text">TESTING NOTES</h3><br/>
@@ -123,7 +125,7 @@ function App() {
       console.log(quote list = {quoteList})
       
       
-    </div>
+    </IconContext.Provider>
   );
 }
 

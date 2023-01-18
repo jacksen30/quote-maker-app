@@ -26,8 +26,8 @@ export default function EditButtonBox(props) {
         </div>
       </div>
       <div className='customTextInput-wrapper'>
-        <label className='customInput-Label' htmlFor="instagram" >Insert Brand Text:</label><input type='text' name='instagram' id='instagram' maxLength='30' onChange={(e) => handleCustomBrandTextChange(e.target.value) } />
-        <label className='customInput-Label' htmlFor="instagram" >Custom Quote:</label><input type='text' name='instagram' id='instagram' maxLength='68' onChange={(e) => handleCustomQuoteTextChange(e.target.value) } />
+        <label className='customInput-Label' htmlFor='customBrandText' >Insert Brand Text:</label><input type='text' name='customBrandText' id='customBrandText' maxLength='30' onChange={(e) => handleCustomBrandTextChange(e.target.value) } />
+        <label className='customInput-Label' htmlFor='customQuoteText' >Custom Quote:</label><input type='text' name='customQuoteText' id='customQuoteText' maxLength='68' onChange={(e) => handleCustomQuoteTextChange(e.target.value) } />
       </div>
     </>
   )
