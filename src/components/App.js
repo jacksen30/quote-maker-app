@@ -10,10 +10,10 @@ export const IconContext = React.createContext()
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('deeppink');
   const [customBrandText, setCustomBrandText] = useState();
-  
+
   const initialQuote = "All Our Dreams Can Come True If We Have The Courage To Pursue Them"
   const [quote, setQuote] = useState(initialQuote);
-  
+
   const [quoteFontSize, setQuoteFontSize] = useState('34px');
 
   const [font, setFont] = useState('Permanent Marker');
@@ -34,7 +34,7 @@ function App() {
   useEffect(() => {
     handleQuoteChange()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [quoteList]) 
+  }, [quoteList])
 
 
   function handleQuoteTypeSelection(v) {
@@ -61,15 +61,15 @@ function App() {
       setFont(newFont)
     }
   }
-  
-  
+
+
   function handleColorChange() {
     const colorList = ['pink', 'firebrick', 'orange', 'purple', 'darkkhaki', 'forestgreen', 'cyan', 'deeppink', 'gold', 'lightslategray', 'tomato', 'thistle', 'deepskyblue', 'steelblue', 'turquoise', 'indianred']
     const randomIndex =  Math.floor(Math.random() * colorList.length);
     let BGcolor = (colorList[randomIndex]);
       if (BGcolor === backgroundColor) {
       setBackgroundColor('darkviolet')
-    }   else { setBackgroundColor(BGcolor) 
+    }   else { setBackgroundColor(BGcolor);
     }
   }
 
@@ -101,7 +101,7 @@ function App() {
   function handleCustomQuoteTextChange(e) {
     setQuote(e)
   }
-  
+
   function handleIconChange(i) {
     if (i === 'instagram-icon') {
       setIcon(<FaInstagram  size='1.15rem' />)
@@ -121,7 +121,7 @@ function App() {
       <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} />
       <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} />
       <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
-      
+
       <br/><br/><br/>
       <p><h3 className="testing-title-text">TESTING NOTES</h3><br/>
       Lots more Quotes and Catogories will be added<br/> once functionlity has been tested<br/><br/>
@@ -150,8 +150,7 @@ function App() {
       console.log(quote = {quote})
       console.log(font = {font})
       console.log(quote list = {quoteList})
-      
-      
+
     </IconContext.Provider>
   );
 }

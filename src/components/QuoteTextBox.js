@@ -6,7 +6,7 @@ export default function QuoteTextBox(props) {
 
   return (
     <div className='quoteTextBox'>
-      <p style={{fontFamily: font, fontSize: quoteFontSize}}>"{quote}"</p>
+      <p style={{fontFamily: font, fontSize: quoteFontSize}}>{quote}</p>
       <BrandTextBox customBrandText={customBrandText} />
     </div>
   )
