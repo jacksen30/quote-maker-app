@@ -13,6 +13,8 @@ function App() {
   
   const initialQuote = "All Our Dreams Can Come True If We Have The Courage To Pursue Them"
   const [quote, setQuote] = useState(initialQuote);
+  
+  const [quoteFontSize, setQuoteFontSize] = useState('34px');
 
   const [font, setFont] = useState('Permanent Marker');
 
@@ -74,8 +76,23 @@ function App() {
   function handleQuoteChange() {
     const randomIndex =  Math.floor(Math.random() * quoteList.length);
     let newQuote = (quoteList[randomIndex]);
-    setQuote(newQuote)
+    let quoteLength = newQuote.length;
+    handleQuoteFontSize(quoteLength);
+    setQuote(newQuote);
   }
+
+  function handleQuoteFontSize(l) {
+    if (l <= 45) {
+      setQuoteFontSize('40px')
+    } else if (l <= 52) {
+      setQuoteFontSize('36px')
+    } else if (l <= 80) {
+      setQuoteFontSize('34px')
+    }else {
+      setQuoteFontSize('8px')
+    }
+  }
+
 
   function handleCustomBrandTextChange(e) {
     setCustomBrandText(e)
@@ -102,7 +119,7 @@ function App() {
     <IconContext.Provider value={icon}>
       <TitleBanner />
       <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} />
-      <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} customBrandText={customBrandText} />
+      <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} />
       <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
       
       <br/><br/><br/>
@@ -126,7 +143,8 @@ function App() {
       --------------------------------------------------------<br/>
       IGNORE TEXT BELOW - DEBUGGING ONLY<br/>
       --------------------------------------------------------<br/>
-
+      console.log(q string.length = {quote.length})<br />
+      console.log(quote font size = {quoteFontSize})<br />
       console.log(icon = {icon}) <br/>
       console.log(background color = {backgroundColor}) <br />
       console.log(quote = {quote})
