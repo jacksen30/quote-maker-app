@@ -1,34 +1,11 @@
 .titleBanner-wrapper{
-    background-color: black;
-    padding-bottom: 10px;
+    color: rgb(155, 16, 176);
+    padding: 10px 15px;
+    text-align: left;
+    font-family: 'Kalam';
     margin-bottom: 18px;
 }
-.titleWrapper {
-    display: flex;
-    width: 100vw;
-    /* border: 5px solid purple; 
-    border-radius: 7px; */
-    align-items: space-between;
-    padding: 0px;
-    margin: 0px;
-}
 
-.qmkrLogo{
-    padding-left: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    color: white;
+.qmkrLogo {
     font-family: 'Permanent Marker';
-    width: 100%;
-}
-
-.nav-bottom{
-    background-color:black;
-    color: white;
-    margin: 0px;
-}
-.intro-text {
-    width: 80vw;
-    margin: auto;
-    font-family: 'Kalam';
 }

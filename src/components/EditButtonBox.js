@@ -3,7 +3,7 @@ import React from 'react'
 export default function EditButtonBox(props) {
     const { handleColorChange, handleQuoteChange, handleFontChange, handleCustomBrandTextChange, handleCustomQuoteTextChange, handleIconChange } = props
   return (
-    <> 
+    <>
       <div>
         <button onClick={() => handleQuoteChange()}>QUOTE</button>
         <button onClick={() => handleColorChange()}>COLOR</button>
@@ -32,10 +32,3 @@ export default function EditButtonBox(props) {
     </>
   )
 }
-
-
-/* Save button that goes below quote color and font buttons - Re-Add when we implement a save function
-
-<button className='button-long'>SAVE</button> 
-
-*/

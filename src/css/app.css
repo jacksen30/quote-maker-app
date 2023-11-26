@@ -1,4 +1,4 @@
-@import-normalize;
+/* @import-normalize; */
 @import './displayBox.css';
 @import './quoteTextBox.css';
 @import './button.css';
@@ -9,16 +9,13 @@
 
 
 *, *::before, *::after {
-    font-family: sans-serif;
     box-sizing: border-box;
-}
-
-html, body {
 	margin: 0;
-	height: 100%;
+	padding: 0;
 }
 
 body {
+	min-height: 100vh;
 	background-color: yellow;
 	font-family: Helvetica, Arial, sans-serif;
     text-align: center;
