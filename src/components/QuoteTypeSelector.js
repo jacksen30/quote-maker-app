@@ -12,7 +12,7 @@ export default function QuoteTypeSelector(props) {
                 <option className='quoteTypeSelector-Option' value="Funny">Funny</option>
                 <option className='quoteTypeSelector-Option' value="Love">Love</option>
                 <option className='quoteTypeSelector-Option' value="PositiveThinking">Positive Thinking</option>
-        </select>  
+        </select>
     </div>
   )
 }
