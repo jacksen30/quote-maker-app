@@ -4,6 +4,7 @@
 @import './button.css';
 @import './titleBanner.css';
 @import './quoteTypeSelector.css';
+@import './toggleSwitch.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Courgette&family=Covered+By+Your+Grace&family=Dancing+Script&family=Indie+Flower&family=Kalam:wght@300;400&family=Noto+Serif&family=Oswald:wght@300;400&family=Permanent+Marker&family=Rowdies:wght@300;400&family=Shadows+Into+Light&family=Sofia+Sans:wght@300;400&display=swap');
 
@@ -25,45 +26,3 @@ body {
 	margin-bottom: 0px;
 	text-decoration: underline;
 }
-
-.toggle {
-    display: flex;
-    align-items: center;
-    margin: 0.7rem 0;
-}
-
-.toggle-text {
-    font-size: 1.25rem;
-}
-
-.toggle-btn {
-    display: flex;
-    align-items: center;
-    height: 35px;
-    width: 65px;
-    background-color: rgb(46, 166, 19);
-    border-radius: 30px;
-    padding: 5px;
-    margin: 0 0.5rem;
-}
-
-.inner-circle {
-    width: 27px;
-    height: 27px;
-    background-color: white;
-    border-radius: 50%;
-    transition: all 250ms;
-}
-
-.toggle-btn.toggled {
-    background-color: red;
-}
-
-.toggle-btn.toggled > .inner-circle {
-    transform: translateX(29px);
-    background-color: #fff;
-}
-
-/* .unselected-toggle-text {
-    opacity: 0.45;
-} */
