@@ -4,6 +4,7 @@ import EditButtonBox from './EditButtonBox';
 import TitleBanner from './TitleBanner';
 import QuoteTypeSelector from './QuoteTypeSelector';
 import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
+import ToggleSwitch from './ToggleSwitch';
 
 export const IconContext = React.createContext()
 
@@ -123,8 +124,9 @@ function App() {
       <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
 
       <br/><br/><br/>
-      <p><h3 className="testing-title-text">TESTING NOTES</h3><br/>
-      Lots more Quotes and Catogories will be added<br/> once functionlity has been tested<br/><br/>
+      <h3 className="testing-title-text">Show Developer Notes:</h3><br/>
+        <ToggleSwitch>
+      <p>Lots more Quotes and Catogories will be added<br/> once functionlity has been tested<br/><br/>
       To Reset After Entering Custom Quote Text,<br/> Press Green Quote Button<br/><br/>
       Sign up button functionality not implemented<br/>
       (Currently sign up not required)<br/><br/>
@@ -150,6 +152,7 @@ function App() {
       console.log(quote = {quote})
       console.log(font = {font})
       console.log(quote list = {quoteList})
+      </ToggleSwitch>
 
     </IconContext.Provider>
   );

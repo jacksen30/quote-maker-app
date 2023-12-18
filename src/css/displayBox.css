@@ -1,26 +1,26 @@
 .displayBox {
-    display: flex;
-    align-items:center;
-    justify-content:space-between;
-    /* width: 95%; */
-    /* min-height: 270px; */
-    width: 90vw; /* Using vw to maintain 1:1 ratio */
-    height: 90vw;
-    max-width: 360px;
-    max-height: 360px;
-    margin: auto;
-    margin-top: 30px;
-    background-color: red;
-  }
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  /* width: 95%; */
+  /* min-height: 270px; */
+  width: 90vw; /* Using vw to maintain 1:1 ratio */
+  height: 90vw;
+  max-width: 360px;
+  max-height: 360px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: red;
+}
 
-  .btb {
-    position: relative;
-    top: 190px;
-    border: 1px solid orange;
-  }
+.btb {
+  position: relative;
+  top: 190px;
+  border: 1px solid orange;
+}
 
-  .brandingplusicon {
-    position: relative;
-    margin-right: 4.5px;
-    bottom: -4px;
-  }
+.brandingplusicon {
+  position: relative;
+  margin-right: 4.5px;
+  bottom: -4px;
+}

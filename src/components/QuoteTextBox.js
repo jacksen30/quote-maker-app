@@ -2,7 +2,7 @@ import React from 'react'
 import BrandTextBox from './BrandTextBox'
 
 export default function QuoteTextBox(props) {
-  const { quote, font, quoteFontSize, customBrandText } = props
+  const { quote, font, quoteFontSize, customBrandText } = props;
 
   return (
     <div className='quoteTextBox'>
