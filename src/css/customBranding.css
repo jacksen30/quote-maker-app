@@ -1,0 +1,12 @@
+.customBrandingToolbar,
+.developerNotesToolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    min-width: 350px;
+}
+
+.content {
+    margin: 20px 0;
+}

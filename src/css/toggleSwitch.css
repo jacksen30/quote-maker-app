@@ -1,3 +1,13 @@
+.toggle-switch-and-text {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+/* .toggle-switch--info-text {
+  display: inline;
+} */
+
 .toggle-switch {
     position: relative;
     display: inline-block;
