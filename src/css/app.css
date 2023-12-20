@@ -23,12 +23,40 @@ body {
     text-align: center;
 }
 
-.testing-title-text{
-	margin-bottom: 0px;
-	text-decoration: underline;
+.main {
+	display: flex;
+	justify-content: center;
+}
+
+.quote-display-and-toolbar-outer-wrapper {
+	display: flex;
+	flex-direction: column
 }
 
 .toolbars-wrapper {
-	width: 100%;
-	padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	padding-top: 35px;
+}
+
+/* .titleBanner-wrapper {
+	align-self: flex-start;
+} */
+
+
+/* Media Queries for viewports wider that 768px */
+@media screen and (min-width: 768px) {
+
+	.quote-display-and-toolbar-outer-wrapper {
+		flex-direction: row;
+		margin-top: 25px;
+		gap: 80px; /* use media quiries to increase gap at larger screen widths */
+	}
+
+	.toolbars-wrapper {
+		padding-top: 100px;
+		max-width: 350px;
+	}
 }

@@ -1,12 +1,10 @@
 .toggle-switch-and-text {
   display: flex;
   align-items: center;
-  /* justify-content: space-around; */
+  justify-content: space-between;
+  width: 350px;
+  margin-bottom: 10px;
 }
-
-/* .toggle-switch--info-text {
-  display: inline;
-} */
 
 .toggle-switch {
     position: relative;
@@ -44,7 +42,6 @@
   }
 
   input:checked + .slider {
-    /* background-color: #2196F3; */
     background-color: green;
   }
 

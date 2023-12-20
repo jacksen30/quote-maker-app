@@ -120,15 +120,19 @@ function App() {
   return (
     <IconContext.Provider value={icon}>
       <TitleBanner />
-      <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} />
-      <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} />
-      <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
-
-      <br/><br/><br/>
-      <div className="toolbars-wrapper">
-        <CustomBranding handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
-        <DeveloperNotes quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} icon={icon} backgroundColor={backgroundColor} quoteList={quoteList} />
-      </div>
+      <main className="main">
+        <div className="quote-display-and-toolbar-outer-wrapper">
+          <div className="quote-ui-wrapper">
+            <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} />
+            <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} />
+            <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
+          </div>
+          <div className="toolbars-wrapper">
+            <CustomBranding handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
+            <DeveloperNotes quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} icon={icon} backgroundColor={backgroundColor} quoteList={quoteList} />
+          </div>
+        </div>
+      </main>
     </IconContext.Provider>
   );
 }
