@@ -6,7 +6,7 @@ export default function CustomBranding(props) {
 
   return (
     <div className="customBrandingToolbar">
-      <ToggleSwitch label="Show Custom Branding ToolBar:">
+      <ToggleSwitch label="Show Custom Branding ToolBar:" initialToggled={true} >
         <div className='radio-btn-div'>
           <input className='radio-btn-input' type='radio' name='icon' id='none' onClick={() => handleIconChange('none-icon')}></input>
           <label className='radio-btn-label'>None</label>
