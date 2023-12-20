@@ -38,12 +38,10 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-items: center;
+	max-width: 350px;
 	padding-top: 35px;
 }
 
-/* .titleBanner-wrapper {
-	align-self: flex-start;
-} */
 
 
 /* Media Queries for viewports wider that 768px */
