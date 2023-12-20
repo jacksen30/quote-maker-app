@@ -2,7 +2,7 @@ import React from 'react'
 import ToggleSwitch from './ToggleSwitch';
 
 export default function DeveloperNotes(props) {
-    const {quote, quoteFontSize, backgroundColor, font, icon, quoteList} = props;
+    // const {quote, quoteFontSize, backgroundColor, font, icon, quoteList} = props;
 
   return (
     <div className="developerNotesToolbar">
