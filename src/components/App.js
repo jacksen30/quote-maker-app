@@ -5,6 +5,7 @@ import TitleBanner from './TitleBanner';
 import QuoteTypeSelector from './QuoteTypeSelector';
 import CustomBranding from './CustomBranding';
 import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
+import AdvancedStyling from './AdvancedStyling';
 import DeveloperNotes from './DeveloperNotes';
 
 export const IconContext = React.createContext()
@@ -129,6 +130,7 @@ function App() {
           </div>
           <div className="toolbars-wrapper">
             <CustomBranding handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
+            <AdvancedStyling />
             <DeveloperNotes quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} icon={icon} backgroundColor={backgroundColor} quoteList={quoteList} />
           </div>
         </div>
