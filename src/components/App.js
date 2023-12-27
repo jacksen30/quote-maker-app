@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import DisplayBox from './DisplayBox'
 import EditButtonBox from './EditButtonBox';
-import TitleBanner from './TitleBanner';
+import Header from './Header';
 import QuoteTypeSelector from './QuoteTypeSelector';
 import CustomBranding from './CustomBranding';
 import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
-import AdvancedStyling from './AdvancedStyling';
+import AdvancedStylingToolbar from './AdvancedStylingToolbar';
 import DeveloperNotes from './DeveloperNotes';
 
 export const IconContext = React.createContext()
@@ -120,18 +120,19 @@ function App() {
 
   return (
     <IconContext.Provider value={icon}>
-      <TitleBanner />
+      <Header />
       <main className="main">
         <div className="quote-display-and-toolbar-outer-wrapper">
-          <div className="quote-ui-wrapper">
+          <div className="toolbars-wrapper">
             <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} />
+            <CustomBranding handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
+            <AdvancedStylingToolbar />
+            <DeveloperNotes quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} icon={icon} backgroundColor={backgroundColor} quoteList={quoteList} />
+          </div>
+          <div className="quote-ui-wrapper">
+            {/* <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} /> */}
             <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} />
             <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
-          </div>
-          <div className="toolbars-wrapper">
-            <CustomBranding handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
-            <AdvancedStyling />
-            <DeveloperNotes quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} icon={icon} backgroundColor={backgroundColor} quoteList={quoteList} />
           </div>
         </div>
       </main>

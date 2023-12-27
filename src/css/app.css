@@ -2,7 +2,6 @@
 @import './displayBox.css';
 @import './quoteTextBox.css';
 @import './button.css';
-@import './titleBanner.css';
 @import './quoteTypeSelector.css';
 @import './toggleSwitch.css';
 @import './customBranding.css';
@@ -21,7 +20,53 @@ body {
 	min-height: 100vh;
 	background-color: #FFF;
 	font-family: Helvetica, Arial, sans-serif;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	/* padding: 10px 15px; */
+    text-align: left;
+    font-family: 'Inter';
+    /* margin-bottom: 18px; */
+	padding: 20px 40px;
+}
+
+.header__text-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+/* .header__text-wrapper {
+	align-self: center;
+} */
+
+.header-siteName {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.header-siteDescription {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+	align-self: center;
+}
+
+.header__contact-btn {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #000;
+	padding: 20px 40px 20px 40px;
+	border-radius: 10px;
+	gap: 10px;
 }
 
 .main {
@@ -40,7 +85,8 @@ body {
 	align-items: center;
 	justify-items: center;
 	max-width: 350px;
-	padding-top: 35px;
+	/* padding-top: 35px; */
+	gap: 20px;
 }
 
 
@@ -54,7 +100,7 @@ body {
 	}
 
 	.toolbars-wrapper {
-		padding-top: 100px;
+		/* padding-top: 100px; */
 		max-width: 350px;
 	}
 }

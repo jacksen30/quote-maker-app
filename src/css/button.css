@@ -5,21 +5,10 @@ button {
     margin: 10px;
     margin-top: 20px;
     border-radius: 15px;
-    background-color: green;
-    color: black;
-    border-color: black;
+    background-color: #4749FE;
+    color: #FFF;
+    border: none;
     }
-
-  #signUp-Button {
-    position: relative;
-    bottom: 6px;
-    margin: 0px;
-    margin-left: 85px;
-    background-color: green;
-    width: 115px;
-    font-size: 1.15rem;;
-    color: black;
-  }
 
   .button-long {
     width: 300px;

@@ -1,12 +1,18 @@
 .customBrandingToolbar,
-.developerNotesToolbar {
+.developerNotesToolbar,
+.advancedStylingToolbar {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
     min-width: 330px;
+    border: 1px solid #D8E0E0;
+    border-radius: 8px;
+    padding: 10px 15px;
 }
 
 .content {
+    /* This is the margin given to elements that are only visable when toggle is on */
     margin: 20px 0;
 }
+
