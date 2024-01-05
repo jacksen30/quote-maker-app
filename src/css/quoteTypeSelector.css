@@ -1,16 +1,35 @@
 .quoteTypeSelector-Label {
     display: block;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 .quoteTypeSelector-DropDown {
-    margin: 10px;
-    border: 1px solid black;
-    font-size: 1.5rem;
-    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #D8E0E0;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    width: 350px;
+    padding: 4px 15px;
 }
 
 .quoteTypeSelector-Option {
     font-size: 1rem;
+}
+
+/* Hides the QuoteTypeSelector component that is used on Desktop viewports */
+.toolbars-wrapper .quoteTypeSelector {
+    display: none;
+}
+
+/* Media Queries for viewports wider that 768px */
+@media screen and (min-width: 768px) {
+
+    .quote-ui-wrapper .quoteTypeSelector {
+        display: none;
+    }
+
+    .toolbars-wrapper .quoteTypeSelector {
+        display: block;
+    }
 }

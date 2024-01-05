@@ -4,7 +4,7 @@ export default function QuoteTypeSelector(props) {
     const { handleQuoteTypeSelection } = props;
 
   return (
-    <div>
+    <div className="quoteTypeSelector">
         <label className='quoteTypeSelector-Label' htmlFor='typeSelector'>What type of Quotes would you like ?</label>
         <select className='quoteTypeSelector-DropDown' name='typeSelector' id='typeSelector' onChange={(e) => handleQuoteTypeSelection(e.target.value)} /*</div>onChange={(e) => handleQuoteTypeChange(e.target.value)}*/>
                 <option className='quoteTypeSelector-Option' value="Motivational">Motivational</option>

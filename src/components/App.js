@@ -123,16 +123,16 @@ function App() {
       <Header />
       <main className="main">
         <div className="quote-display-and-toolbar-outer-wrapper">
+          <div className="quote-ui-wrapper">
+            <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} />
+            <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} />
+            <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
+          </div>
           <div className="toolbars-wrapper">
             <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} />
             <CustomBranding handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
-            <AdvancedStylingToolbar />
+            <AdvancedStylingToolbar handleCustomQuoteTextChange={handleCustomQuoteTextChange} />
             <DeveloperNotes quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} icon={icon} backgroundColor={backgroundColor} quoteList={quoteList} />
-          </div>
-          <div className="quote-ui-wrapper">
-            {/* <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} /> */}
-            <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} />
-            <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
           </div>
         </div>
       </main>

@@ -2,11 +2,12 @@ import React from 'react';
 import ToggleSwitch from './ToggleSwitch';
 
 export default function CustomBranding(props) {
-  const { handleCustomBrandTextChange, handleCustomQuoteTextChange, handleIconChange } = props;
+  const { handleCustomBrandTextChange, handleIconChange } = props;
 
   return (
     <div className="customBrandingToolbar">
       <ToggleSwitch label="Show Custom Branding ToolBar:" initialToggled={true} >
+        <hr class="toolbar-dividing-line" />
         <div className='radio-btn-div'>
           <input className='radio-btn-input' type='radio' name='icon' id='none' onClick={() => handleIconChange('none-icon')}></input>
           <label className='radio-btn-label'>None</label>
@@ -21,8 +22,10 @@ export default function CustomBranding(props) {
           <label className='radio-btn-label'>Twitter</label>
         </div>
         <div className='customTextInput-wrapper'>
-          <label className='customInput-Label' htmlFor='customBrandText' >Insert Brand Text:</label><input type='text' name='customBrandText' id='customBrandText' maxLength='30' onChange={(e) => handleCustomBrandTextChange(e.target.value) } />
-          <label className='customInput-Label' htmlFor='customQuoteText' >Custom Quote:</label><input type='text' name='customQuoteText' id='customQuoteText' maxLength='68' onChange={(e) => handleCustomQuoteTextChange(e.target.value) } />
+          <div className='username-input-wrapper'>
+            <label className='customInput-Label text-input-label' htmlFor='customBrandText'>Add Brand or Social Page:</label>
+            <input type='text' name='customBrandText' className='text-input' id='customBrandText' placeholder='Enter your user name here' maxLength='30' onChange={(e) => handleCustomBrandTextChange(e.target.value) } />
+          </div>
         </div>
       </ToggleSwitch>
     </div>

@@ -31,11 +31,15 @@ body {
     font-family: 'Inter';
     /* margin-bottom: 18px; */
 	padding: 20px 40px;
+	border-bottom: 1px solid #15141426;
+	margin-bottom: 18px;
 }
 
 .header__text-wrapper {
 	display: flex;
-	align-items: center;
+	flex-direction:column;
+	/* align-items: center; */
+	align-items: left;
 }
 
 /* .header__text-wrapper {
@@ -64,9 +68,11 @@ body {
 	text-decoration: none;
 	color: #FFF;
 	background-color: #000;
-	padding: 20px 40px 20px 40px;
+	padding: 15px 30px;
 	border-radius: 10px;
 	gap: 10px;
+	/*Dont display on mobile viewports */
+	display: none;
 }
 
 .main {
@@ -93,8 +99,21 @@ body {
 /* Media Queries for viewports wider that 768px */
 @media screen and (min-width: 768px) {
 
+	.header__contact-btn {
+		/*Display on mobile viewports */
+		display: block;
+	}
+
+	.header__text-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		/* align-items: left; */
+	}
+
 	.quote-display-and-toolbar-outer-wrapper {
 		flex-direction: row;
+		flex-direction: row-reverse;
 		margin-top: 25px;
 		gap: 80px; /* use media quiries to increase gap at larger screen widths */
 	}

@@ -7,17 +7,18 @@ export default function DeveloperNotes(props) {
   return (
     <div className="developerNotesToolbar">
         <ToggleSwitch label="Show Helpful Notes:">
-            <div>
-                <p>Lots more Quotes and Catogories will be added<br/> once functionlity has been tested<br/><br/>
+          <hr class="toolbar-dividing-line" />
+          <div>
+              <p>Lots more Quotes and Catogories will be added<br/> once functionlity has been tested<br/><br/>
                 Save Function - Not Yet Implemented <br/>(Use screenshot for now)<br/><br/>
                 To Reset After Entering Custom Quote Text,<br/> Press Green Quote Button<br/><br/>
-                <br/>
+              <br/>
                 Save Function - Not Yet Implemented <br/>(Use screenshot for now)<br/><br/>
 
                 The quote box should never resize on rendering,<br/> but at this time it may with longer quotes<br/> on phones with smaller screens.
-                </p>
+              </p>
 
-                {/* --------------------------------------------------------<br/>
+              {/* --------------------------------------------------------<br/>
                 IGNORE TEXT BELOW - DEBUGGING ONLY<br/>
                 --------------------------------------------------------<br/>
                 console.log(q string.length = {quote.length})<br />
@@ -27,7 +28,7 @@ export default function DeveloperNotes(props) {
                 console.log(quote = {quote})
                 console.log(font = {font})
                 console.log(quote list = {quoteList}) */}
-            </div>
+          </div>
         </ToggleSwitch>
     </div>
   )
