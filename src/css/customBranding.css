@@ -39,11 +39,12 @@
 
 .content {
     /* This is the margin given to elements that are only visable when toggle is on */
-    margin: 20px 0;
+    margin: 18px 0;
 }
 
-hr {
+.toolbar-dividing-line {
     width: 100%;
-    color: black;
-    margin-bottom: 20px;
+    /* color: black; */
+    color: #D8E0E0;
+    margin-bottom: 18px; /* Later maybe use margin top here and remove from .content */
 }

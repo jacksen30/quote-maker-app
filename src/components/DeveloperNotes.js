@@ -9,15 +9,11 @@ export default function DeveloperNotes(props) {
         <ToggleSwitch label="Show Helpful Notes:">
           <hr class="toolbar-dividing-line" />
           <div>
-              <p>Lots more Quotes and Catogories will be added<br/> once functionlity has been tested<br/><br/>
-                Save Function - Not Yet Implemented <br/>(Use screenshot for now)<br/><br/>
-                To Reset After Entering Custom Quote Text,<br/> Press Green Quote Button<br/><br/>
-              <br/>
-                Save Function - Not Yet Implemented <br/>(Use screenshot for now)<br/><br/>
-
-                The quote box should never resize on rendering,<br/> but at this time it may with longer quotes<br/> on phones with smaller screens.
-              </p>
-
+            <ul>
+              <li>Lots more Quotes and Catogories will be added once functionlity has been tested</li>
+              <li>Save Function - Not Yet Implemented <br/>(Use screenshot for now)</li>
+              <li>To Reset After Entering Custom Quote Text,<br/> Press Green Quote Button</li>
+            </ul>
               {/* --------------------------------------------------------<br/>
                 IGNORE TEXT BELOW - DEBUGGING ONLY<br/>
                 --------------------------------------------------------<br/>
