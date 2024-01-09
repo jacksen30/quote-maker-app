@@ -23,6 +23,12 @@ function App() {
 
   const [icon, setIcon] = useState();
 
+  const [brandBorder, setBrandBorder] = useState({
+    width: '0px',
+    color: '',
+    radius: '0px;',
+  });
+
   const Motivational = ['It does not matter how slowly you go as long as you do not stop.', 'Start where you are. Use what you have. Do what you can.', 'Life is 10% what happens to you and 90% how you react to it.', 'The secret of getting ahead is getting started.', 'Never give up, for that is just the place and time that the tide will turn.', 'You are never too old to set another goal or to dream a new dream.', 'Remember, today is the tomorrow you worried about yesterday.', 'You miss 100% of the shots you don’t take.', 'The only way to avoid criticism: do nothing, say nothing, and be nothing.'];
   const Funny = ['I love you more than coffee but not always before coffee.', 'I like long romantic walks down every aisle at Kmart.', 'You are only young once, but you can be immature for a lifetime.', 'People say nothing is impossible, but I do nothing every day.', 'If you have friends who are as weird as you, then you have everything.', 'A pessimist is a person who has had to listen to too many optimists.', 'An alcoholic is someone you don’t like who drinks as much as you do.', 'I’ve got all the money I’ll ever need, if I die by four o’clock.', 'If you want your children to listen, try talking softly to someone else.', 'I always arrive late at the office, but I make up for it by leaving early.', 'The worst time to have a heart attack is during a game of charades.', 'Sports are the reason I am out of shape. I watch them all on TV.'];
   const Love = ['I love you because the entire universe conspired to help me find you.', 'I love you more than there are stars in the sky and fish in the sea.', 'Till my last day, I’ll be loving you.', 'If you remember me, then I don’t care if everyone else forgets.', 'Love is an irresistible desire to be irresistibly desired.', 'Never go to bed mad. Stay up and fight.', 'To love and be loved is to feel the sun from both sides.', 'All you need is love. But a little chocolate now and then doesn\'t hurt.', 'A simple I love you means more than money.', 'Life with you makes perfect sense, You\'re my best friend.', 'Two things you will never have to chase: true friends and true love.', 'True love is selfless. It is prepared to sacrifice.'];
@@ -117,6 +123,12 @@ function App() {
     }
   }
 
+  const handleBrandBorderChange = (property, value) => {
+    setBrandBorder({
+      ...brandBorder,
+      [property]: value,
+    });
+  }
 
   return (
     <IconContext.Provider value={icon}>
@@ -124,14 +136,14 @@ function App() {
       <main className="main">
         <div className="quote-display-and-toolbar-outer-wrapper">
           <div className="quote-ui-wrapper">
-            <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} />
-            <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} />
+            <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} uniqueId='quoteTypeSelector-desktop' />
+            <DisplayBox backgroundColor={backgroundColor} quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} brandBorder={brandBorder} />
             <EditButtonBox handleColorChange={handleColorChange} handleQuoteChange={handleQuoteChange} handleFontChange={handleFontChange} handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
           </div>
           <div className="toolbars-wrapper">
-            <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} />
+            <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} uniqueId='quoteTypeSelector-mobile' />
             <CustomBranding handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
-            <AdvancedStylingToolbar handleCustomQuoteTextChange={handleCustomQuoteTextChange} />
+            <AdvancedStylingToolbar handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleBrandBorderChange={handleBrandBorderChange} />
             <DeveloperNotes quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} icon={icon} backgroundColor={backgroundColor} quoteList={quoteList} />
           </div>
         </div>

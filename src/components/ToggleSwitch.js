@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ToggleSwitch = ({label, initialToggled = false, onChange, children}) => {
+const ToggleSwitch = ({label, uniqueId, initialToggled = false, onChange, children}) => {
     const [isToggled, setIsToggled] = useState(initialToggled);
 
     const handleToggle = () => {
@@ -16,7 +16,7 @@ const ToggleSwitch = ({label, initialToggled = false, onChange, children}) => {
             <div className="toggle-switch-and-text">
                 <span className="toggle-switch--info-text">{label}</span>
                 <label className="toggle-switch">
-                    <input type="checkbox" checked={isToggled} onChange={handleToggle} />
+                    <input type="checkbox" id={uniqueId} checked={isToggled} onChange={handleToggle} />
                     <span className="slider round"></span>
                 </label>
             </div>

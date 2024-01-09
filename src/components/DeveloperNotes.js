@@ -6,8 +6,8 @@ export default function DeveloperNotes(props) {
 
   return (
     <div className="developerNotesToolbar">
-        <ToggleSwitch label="Show Helpful Notes:">
-          <hr class="toolbar-dividing-line" />
+        <ToggleSwitch label="Show Helpful Notes:" uniqueId="developerNotesToolbar-toggle">
+          <hr className="toolbar-dividing-line" />
           <div>
             <ul>
               <li>Lots more Quotes and Catogories will be added once functionlity has been tested</li>
