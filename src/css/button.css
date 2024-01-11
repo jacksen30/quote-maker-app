@@ -1,35 +1,31 @@
-button {
-    font-weight: bold;
-    height: 50px;
-    width: 100px;
-    margin: 10px;
-    margin-top: 20px;
-    border-radius: 15px;
-    background-color: #4749FE;
-    color: #FFF;
-    border: none;
-    }
+.button-main {
+  font-weight: bold;
+  height: 50px;
+  width: 100px;
+  margin: 20px 10px 10px 10px;
+  border-radius: 15px;
+  background-color: #4749FE;
+  color: #FFF;
+  border: none;
+  /* Consider adding border and interactivity later */
+}
 
-  .button-long {
-    width: 300px;
-  }
+.customTextInput-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-row-gap: 12px;
+  margin-top: 12px;
+  margin-right: 6px;
+}
 
-  .radio-btn-label{
-    margin-right: 8px;
-  }
+.customInput-Label {
+  font-weight: 600;
+}
 
-  .radio-btn-input {
-    margin-right: 4px;
-  }
+.radio-btn-label {
+  margin-right: 8px;
+}
 
-  .customTextInput-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-row-gap: 12px;
-    margin-top: 12px;
-    margin-right: 6px;
-  }
-
-  .customInput-Label {
-    font-weight: 600;
-  }
+.radio-btn-input {
+  margin-right: 4px;
+}

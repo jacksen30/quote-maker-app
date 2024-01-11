@@ -5,7 +5,6 @@
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    /* min-width: 330px; */
     width: 360px;
     border: 1px solid #D8E0E0;
     border-radius: 8px;
@@ -44,7 +43,6 @@
 
 .toolbar-dividing-line {
     width: 100%;
-    /* color: black; */
     color: #D8E0E0;
     margin-bottom: 18px; /* Later maybe use margin top here and remove from .content */
 }

@@ -9,10 +9,10 @@ export default function DeveloperNotes(props) {
         <ToggleSwitch label="Show Helpful Notes:" uniqueId="developerNotesToolbar-toggle">
           <hr className="toolbar-dividing-line" />
           <div>
-            <ul>
-              <li>Lots more Quotes and Catogories will be added once functionlity has been tested</li>
-              <li>Save Function - Not Yet Implemented <br/>(Use screenshot for now)</li>
-              <li>To Reset After Entering Custom Quote Text,<br/> Press Green Quote Button</li>
+            <ul className="toolbar-list">
+              <li className="toolbar-list-item">Save Function - Not Yet Implemented<br/>(Use screenshot for now).</li>
+              <li className="toolbar-list-item">Lots more Quotes and Catogories will be added once functionlity has been tested.</li>
+              <li className="toolbar-list-item">To Reset After Entering Custom Quote Text, Press Green Quote Button.</li>
             </ul>
               {/* --------------------------------------------------------<br/>
                 IGNORE TEXT BELOW - DEBUGGING ONLY<br/>

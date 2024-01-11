@@ -15,7 +15,7 @@ export default function CustomBranding(props) {
           </div>
         </div>
 
-        <fieldset className='radio-btn-div'>
+        <fieldset className='radio-btn-div radio-btn-div--social'>
           <legend>Add Icon:</legend>
           <div>
             <input className='radio-btn-input' type='radio' name='icon' id='icon-none' onClick={() => handleIconChange('none-icon')}></input>

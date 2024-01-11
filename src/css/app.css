@@ -27,7 +27,6 @@ body {
 	display: flex;
 	justify-content: space-between;
     font-family: 'Inter';
-	/* padding: 20px 40px; */
 	padding: 20px 20px;
 	border-bottom: 1px solid #15141426;
 	margin-bottom: 25px;
@@ -46,21 +45,20 @@ body {
     letter-spacing: 0em;
 
 	margin-bottom: 5px;
-
 }
 
-.test-divider {
+.header--text-divider {
 	font-size: 30px;
 	font-weight: 400;
 	display: none;
 }
 
 .header-siteDescription {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0em;
-    /* text-align: left; */
+    text-align: left;
 	align-self: center;
 }
 
@@ -88,14 +86,30 @@ body {
 .toolbars-wrapper {
 	display: flex;
 	flex-direction: column;
-	/* align-items: center;
-	justify-items: center; */
 	max-width: 350px;
-	/* padding-top: 35px; */
 	margin: 20px 0px;
 	gap: 20px;
 }
 
+.toolbar-list {
+	padding-left: 15px;
+	font-family: 'Inter';
+	color: #808080;
+	font-size: 16px;
+}
+
+.toolbar-list-item {
+	padding-bottom: 10px;
+}
+
+.radio-btn-div--social {
+	margin-top: 10px;
+}
+
+.branding-border-btn-div {
+	margin-top: 15px;
+	border-color: #808080;
+}
 
 /* Media Queries for viewports wider that 768px */
 @media screen and (min-width: 768px) {
@@ -111,7 +125,11 @@ body {
 		align-items: center;
 	}
 
-	.test-divider {
+	.header-siteDescription {
+		font-size: 16px;
+	}
+
+	.header--text-divider {
 		display: block;
 		padding: 0px 10px;
 	}
@@ -124,7 +142,6 @@ body {
 	}
 
 	.toolbars-wrapper {
-		/* padding-top: 100px; */
 		margin: unset;
 		align-items: center;
 		max-width: 350px;

@@ -10,11 +10,13 @@
     border-radius: 8px;
     font-size: 1.25rem;
     width: 350px;
-    padding: 4px 15px;
+    /* width: 100%; */
+    padding: 4px 10px;
 }
 
 .quoteTypeSelector-Option {
     font-size: 1rem;
+    width: 100%; /* Ensures drop down options remains the same size .quoteTypeSelector-DropDown */
 }
 
 /* Hides the QuoteTypeSelector component that is used on Desktop viewports */

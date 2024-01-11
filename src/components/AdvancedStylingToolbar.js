@@ -64,7 +64,6 @@ export default function AdvancedStylingToolbar(props) {
             </div>
           </fieldset>
         </fieldset>
-        {/* <p>More Options Will Be Placed Here Later</p> */}
       </ToggleSwitch>
     </div>
   )
