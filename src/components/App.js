@@ -47,7 +47,7 @@ function App() {
   }, [quoteList])
 
 
-  function handleQuoteTypeSelection(v) {
+  const handleQuoteTypeSelection = (v) => {
     if (v === 'Love') {
       setQuoteList([...Love])
     } else if (v === 'Motivational') {
@@ -58,10 +58,10 @@ function App() {
       setQuoteList([...AtomicHabits])
     } else if (v === 'PositiveThinking' ) {
       setQuoteList([...PositiveThinking])
+    }
   }
-}
 
-  function handleFontChange() {
+  const handleFontChange = () => {
     const fontList = ['Boogaloo', 'Courgette', 'Covered By Your Grace', 'Dancing Script', 'Indie Flower', 'Kalam', 'Noto Serif', 'Oswald', 'Permanent Marker', 'Rowdies', 'Shadows Into Light', 'Sofia Sans']
     const randomIndex =  Math.floor(Math.random() * fontList.length);
     let newFont = (fontList[randomIndex]);
@@ -73,17 +73,18 @@ function App() {
   }
 
 
-  function handleColorChange() {
+  const handleColorChange = () => {
     const colorList = ['pink', 'firebrick', 'orange', 'purple', 'darkkhaki', 'forestgreen', 'cyan', 'deeppink', 'gold', 'lightslategray', 'tomato', 'thistle', 'deepskyblue', 'steelblue', 'turquoise', 'indianred']
     const randomIndex =  Math.floor(Math.random() * colorList.length);
     let BGcolor = (colorList[randomIndex]);
       if (BGcolor === backgroundColor) {
-      setBackgroundColor('darkviolet')
-    }   else { setBackgroundColor(BGcolor);
-    }
+        setBackgroundColor('darkviolet')
+      } else {
+        setBackgroundColor(BGcolor);
+      }
   }
 
-  function handleQuoteChange() {
+  const handleQuoteChange = () => {
     const randomIndex =  Math.floor(Math.random() * quoteList.length);
     let newQuote = (quoteList[randomIndex]);
     let quoteLength = newQuote.length;
@@ -91,7 +92,7 @@ function App() {
     setQuote(newQuote);
   }
 
-  function handleQuoteFontSize(l) {
+  const handleQuoteFontSize = (l) => {
     if (l <= 45) {
       setQuoteFontSize('40px')
     } else if (l <= 52) {
@@ -104,22 +105,22 @@ function App() {
   }
 
 
-  function handleCustomBrandTextChange(e) {
+  const handleCustomBrandTextChange = (e) => {
     setCustomBrandText(e)
   }
 
-  function handleCustomQuoteTextChange(e) {
+  const handleCustomQuoteTextChange = (e) => {
     setQuote(e)
   }
 
-  function handleIconChange(i) {
+  const handleIconChange = (i) => {
     if (i === 'instagram-icon') {
       setIcon(<FaInstagram  size='1.15rem' />)
     } else if (i === 'facebook-icon') {
       setIcon(<FaFacebookSquare size='1.15rem'  />)
     } else if (i === 'twitter-icon') {
       setIcon(<FaTwitter size='1.15rem' />)
-    }else {
+    } else {
       setIcon()
     }
   }
