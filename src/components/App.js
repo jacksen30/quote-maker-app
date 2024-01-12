@@ -27,6 +27,7 @@ function App() {
     width: '0px',
     color: '',
     radius: '0px',
+    position: 'center',
   });
 
   const Motivational = ['It does not matter how slowly you go as long as you do not stop.', 'Start where you are. Use what you have. Do what you can.', 'Life is 10% what happens to you and 90% how you react to it.', 'The secret of getting ahead is getting started.', 'Never give up, for that is just the place and time that the tide will turn.', 'You are never too old to set another goal or to dream a new dream.', 'Remember, today is the tomorrow you worried about yesterday.', 'You miss 100% of the shots you don’t take.', 'The only way to avoid criticism: do nothing, say nothing, and be nothing.'];
@@ -142,7 +143,7 @@ function App() {
           </div>
           <div className="toolbars-wrapper">
             <QuoteTypeSelector handleQuoteTypeSelection={handleQuoteTypeSelection} uniqueId='quoteTypeSelector-mobile' />
-            <CustomBranding handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} />
+            <CustomBranding handleCustomBrandTextChange={handleCustomBrandTextChange} handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleIconChange={handleIconChange} handleBrandBorderChange={handleBrandBorderChange} />
             <AdvancedStylingToolbar handleCustomQuoteTextChange={handleCustomQuoteTextChange} handleBrandBorderChange={handleBrandBorderChange} />
             <DeveloperNotes quote={quote} font={font} quoteFontSize={quoteFontSize} customBrandText={customBrandText} icon={icon} backgroundColor={backgroundColor} quoteList={quoteList} />
           </div>

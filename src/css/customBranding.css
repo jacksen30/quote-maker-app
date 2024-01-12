@@ -51,10 +51,11 @@
     display: flex;
     flex-wrap: wrap;
     border: none;
+    margin-top: 12px;
 }
 
 .radio-btn-div legend {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .radio-btn-div div {

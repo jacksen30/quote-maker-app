@@ -1,13 +1,13 @@
 .brandTextBox {
-  margin-top: 10px;
-
   display: flex;
   justify-content: center; /* Allow this to be updated by user input to position branding, left / center / right  */
-  align-items: center;
+  margin: 15px 10px 0px 10px;
 }
 
 .inner-container {
-  display: inline-block; /* Display as an inline block to allow to grow with dynamic text */
+  /* display: inline-block; /* Display as an inline block to allow to grow with dynamic text */
+  display: flex;
   padding: 5px 10px;
+  align-items: center;
   /* Optional features to consider at a later date:  font-size, background-color, etc. */
 }

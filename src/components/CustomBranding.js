@@ -2,7 +2,7 @@ import React from 'react';
 import ToggleSwitch from './ToggleSwitch';
 
 export default function CustomBranding(props) {
-  const { handleCustomBrandTextChange, handleIconChange } = props;
+  const { handleCustomBrandTextChange, handleIconChange, handleBrandBorderChange } = props;
 
   return (
     <div className="customBrandingToolbar">
@@ -32,6 +32,22 @@ export default function CustomBranding(props) {
           <div>
             <input className='radio-btn-input' type='radio' name='icon' id='icon-twitter' onClick={() => handleIconChange('twitter-icon')}  />
             <label className='radio-btn-label' htmlFor='icon-twitter'>Twitter</label>
+          </div>
+        </fieldset>
+
+        <fieldset className='radio-btn-div radio-btn-div--brand-position'>
+          <legend>Brand Position:</legend>
+          <div>
+            <input className='radio-btn-input' type='radio' name='brand-position' id='position-brand-center' onClick={() => handleBrandBorderChange('position', 'center')}></input>
+            <label className='radio-btn-label' htmlFor='position-brand-center'>Center</label>
+          </div>
+          <div>
+            <input className='radio-btn-input' type='radio' name='brand-position' id='position-brand-left' onClick={() => handleBrandBorderChange('position', 'flex-start')} />
+            <label className='radio-btn-label' htmlFor='position-brand-left'>Left</label>
+          </div>
+          <div>
+            <input className='radio-btn-input' type='radio' name='brand-position' id='position-brand-right' onClick={() => handleBrandBorderChange('position', 'flex-end')} />
+            <label className='radio-btn-label' htmlFor='position-brand-right'>Right</label>
           </div>
         </fieldset>
 
