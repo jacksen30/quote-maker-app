@@ -108,8 +108,9 @@ body {
 
 .branding-border-btn-div {
 	margin-top: 15px;
-	border-color: #808080;
+	border: 1px solid #808080;
 }
+
 
 /* Media Queries for viewports wider that 768px */
 @media screen and (min-width: 768px) {

@@ -59,7 +59,9 @@
 
 .radio-btn-div div {
     display: flex;
-    margin-bottom: 7px;
+
+    align-items: center;
+    /* margin-bottom: 7px; */
 }
 
 .radio-btn-input {
@@ -77,4 +79,12 @@
     border: none;
     margin-top: 5px;
     padding: 6px 10px 10px 15px;
+}
+
+.radio-btn-label {
+    margin-right: 8px;
+}
+
+.radio-btn-input {
+    margin-right: 4px;
 }
