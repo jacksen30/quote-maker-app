@@ -4,9 +4,10 @@ import EditButtonBox from './EditButtonBox';
 import Header from './Header';
 import QuoteTypeSelector from './QuoteTypeSelector';
 import CustomBranding from './CustomBranding';
-import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaTwitter, FaFacebookF, FaInstagramSquare, FaYoutube } from "react-icons/fa";
 import AdvancedStylingToolbar from './AdvancedStylingToolbar';
 import DeveloperNotes from './DeveloperNotes';
+import Footer from './Footer';
 
 export const IconContext = React.createContext()
 
@@ -150,6 +151,7 @@ function App() {
           </div>
         </div>
       </main>
+      <Footer />
     </IconContext.Provider>
   );
 }

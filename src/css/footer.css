@@ -1,0 +1,85 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    color: #FFF;
+    background-color: #000;
+    margin-top: 30px;
+    padding: 0px 60px; /* padding for footer sides, use container viewport width in Final code */
+}
+
+.footer a {
+    text-decoration: none;
+    color:#FFFFFFCC;
+}
+
+.footer-list {
+    list-style-type: none;
+    margin: 20px 70px 20px 0px
+}
+
+.footer-list--title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 13px;
+}
+
+.footer-list--item {
+    margin-bottom: 6px;
+}
+
+.footer-social-icon--wrapper {
+    margin-top: 25px;
+}
+
+.footer-social-icon--item {
+    background-color: #131313;
+    margin-left: 20px;
+    padding: 10px 10px 7px 10px;
+    border-radius: 100px;
+}
+
+.footer-top {
+    font-size: 30px;
+    border-bottom: 1px solid #FFFFFF33;
+    padding: 25px 0px 10px 0px;
+}
+
+.footer-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-middle .footer-middle-lists-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #FFFFFF33;
+    padding: 10px 0px 25px 0px;
+}
+
+.footer-bottom .attribution-link {
+    color: hotpink;
+    font-weight: 700;
+}
+
+.footer-bottom .footer-legal-link {
+    margin-left: 40px;
+}
+
+.footer-bottom .footer-legal-link span {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-bottom .footer-legal-link .legal-icon {
+    margin-bottom: -1.5px;
+    margin-right: 6px;
+}
